@@ -1,0 +1,16 @@
+# A2A MCP Hello Agent - Dependencies
+
+# A2A SDK
+a2a-sdk[http-server]>=0.2.0
+
+# MCP SDK
+mcp[cli]>=1.23.0
+
+# HTTP Client
+httpx>=0.28.0
+
+# ASGI Server
+uvicorn>=0.30.0
+
+# Environment Variables
+python-dotenv>=1.0.0

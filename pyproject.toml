@@ -1,0 +1,19 @@
+[project]
+name = "a2a-mcp-hello"
+version = "0.1.0"
+description = "A2A Agent that calls MCP Hello Server"
+requires-python = ">=3.11"
+dependencies = [
+    "a2a-sdk[http-server]>=0.2.0",
+    "mcp[cli]>=1.23.0",
+    "httpx>=0.28.0",
+    "uvicorn>=0.30.0",
+    "python-dotenv>=1.0.0",
+]
+
+[project.scripts]
+a2a-mcp-hello = "src.server:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
